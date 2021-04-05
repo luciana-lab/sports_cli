@@ -6,3 +6,8 @@ require "rubocop/rake_task"
 RuboCop::RakeTask.new
 
 task default: :rubocop
+require 'dotenv/tasks'
+
+task mytask: :dotenv do
+
+end

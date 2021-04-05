@@ -24,6 +24,12 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+Please, get an API Key from https://opencagedata.com/ to transform the user's 'city' into a Longitute and Latitude.
+Create a .env file with the following key:
+```
+Geocolder_key=[YOUR KEY HERE]
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

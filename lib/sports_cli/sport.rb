@@ -19,4 +19,11 @@ class Sport
         @@all
     end
 
+    def self.find_sport(sport_name)
+        self.all.find do |sport|
+            sport.name == sport_name
+        end
+
+    end
+
 end
