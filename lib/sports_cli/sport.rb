@@ -1,14 +1,13 @@
 # what do I want my object model to look like
 
 class Sport
-    attr_accessor :name, :description, :locale, :weather
+    attr_accessor :name, :description
     @@all = []
 
-    def initialize(name, description, locale, weather)
+    def initialize(name, description)
         @name = name
         @description = description
-        @locale = locale
-        @weather = weather
+        save
     end
 
     def save

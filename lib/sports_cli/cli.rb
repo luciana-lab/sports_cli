@@ -12,8 +12,8 @@ class CLI
 
     def greet(name)
         puts "Hey #{name}, let's start your adventure!"
-        puts "Enter the name of the city you are at or 'stop' to finish your adventure."
-        menu
+        puts "Enter the name of the 'city' you are at or 'stop' to finish your adventure."
+        
     end
 
     # 3 options: print the list of sports in their city, exit, invalid message

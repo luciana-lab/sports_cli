@@ -2,7 +2,6 @@
 # require_relative "./sports_cli/version"
 require 'dotenv/load'
 require 'opencage/geocoder'
-require 'pry'
 require "bundler"
 Bundler.require
 
