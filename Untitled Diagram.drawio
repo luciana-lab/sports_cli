@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-06T21:47:30.862Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="hyrFPsqppkCNKvGvhXxK" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-06T21:57:24.744Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="r2uB3I4iMmgdaP96hin9" version="14.5.8" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
     <mxGraphModel dx="1270" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1806" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1767" target="Usu_N6nTi2KZN_G5B-OR-1804">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1767" value="Print welcome (start) &amp;amp; asks his/her name" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
+        <mxCell id="1767" value="Print welcome (start) &amp;amp; ask User name" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="116" y="231" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1831" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1778" target="1767">
@@ -31,7 +31,7 @@
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1840" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1797" target="Usu_N6nTi2KZN_G5B-OR-1801">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1797" value="Print the city name entered and option to User choose" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1797" value="Print the city name entered and options to User choose" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
           <mxGeometry x="316" y="231" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1812" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.981;entryY=0.603;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1801" target="Usu_N6nTi2KZN_G5B-OR-1804">
@@ -58,22 +58,13 @@
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1825" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1814" target="Usu_N6nTi2KZN_G5B-OR-1817">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1855" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1814" target="Usu_N6nTi2KZN_G5B-OR-1844">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1140" y="110" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="785" y="33" />
-              <mxPoint x="1110" y="33" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1814" value="User select a sport to see more info" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#61c6ce;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
           <mxGeometry x="710" y="55" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1822" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.019;entryY=0.609;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1815" target="Usu_N6nTi2KZN_G5B-OR-1814">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1815" value="Use the information that was saved previously to print the sports list in that specific location" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1815" value="Use the information that was saved previously to print the sports list of that location" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
           <mxGeometry x="510" y="440" width="150" height="96" as="geometry" />
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1824" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1817" target="Usu_N6nTi2KZN_G5B-OR-1823">
@@ -85,18 +76,13 @@
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1843" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1823" target="Usu_N6nTi2KZN_G5B-OR-1826">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1823" value="Match the User input with the data storage to display the right info" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1823" value="Match the User input (sport selected) with the data storage to display the right info" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
           <mxGeometry x="710" y="440" width="150" height="96" as="geometry" />
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1852" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.274;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1852" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.274;entryY=0.088;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1826">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1062" y="68" as="sourcePoint" />
-            <mxPoint x="1091.016" y="301.98400000000004" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1090" y="68" />
-              <mxPoint x="1090" y="296" />
-              <mxPoint x="1091" y="296" />
-            </Array>
+            <mxPoint x="1080" y="66.02" as="sourcePoint" />
+            <mxPoint x="1109.016" y="300.004" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1867" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.006;entryY=0.632;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1826" target="Usu_N6nTi2KZN_G5B-OR-1804">
@@ -109,8 +95,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1826" value="User can choose to print sports list, exit, or change location" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#61c6ce;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
-          <mxGeometry x="910" y="55" width="150" height="60" as="geometry" />
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1879" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Usu_N6nTi2KZN_G5B-OR-1826" target="Usu_N6nTi2KZN_G5B-OR-1807">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="93" />
+              <mxPoint x="900" y="40" />
+              <mxPoint x="624" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Usu_N6nTi2KZN_G5B-OR-1826" value="User can choose to see sports list again, exit, or change location" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#61c6ce;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="55" width="150" height="75" as="geometry" />
         </mxCell>
         <mxCell id="Usu_N6nTi2KZN_G5B-OR-1827" value="USER" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#61c6ce" vertex="1" parent="1">
           <mxGeometry x="34.5" y="55" width="30" height="60" as="geometry" />
