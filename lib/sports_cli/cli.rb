@@ -13,7 +13,7 @@ class CLI
     def greet(name)
         puts "Hey #{name}, let's start your adventure!"
         puts "Enter the name of the 'city' you are at or 'stop' to finish your adventure."
-        input = gets.strip
+        input = user_input
         API.get_data(input)
         city(input)
     end
@@ -46,7 +46,6 @@ class CLI
         puts ""
         puts ""
         puts "Select an activity name to see more information about this sport."
-        user_input
         sports_selection(user_input)
         
     end
@@ -57,15 +56,21 @@ class CLI
 
     def invalid 
         puts "Sorry, I couldn't understand that."
-        puts "Please enter a valid 'city' name or enter 'stop' to finish your adventure."
+        puts "Please enter 'start' to see your sports list or 'stop' to finish your adventure."
         menu
     end
 
-    def sports_selection
-        
-        selection = user_input
+    def sports_selection(sport)
+        info = Sport.find_sport(sport)
+        puts info.name
+        puts info.description
+
+        puts ""
+        puts "#{info.name} looks pretty fun! Enter 'start' to see your the sports lists again or 'exit' to stop your adventure."
         # binding.pry
-        Sport.find_sport(selection)
+        # selection = user_input
+        
+        
     end
 
 end
