@@ -15,7 +15,7 @@ class API
         result = geocolder.geocode("city")
         lat = result.first.coordinates[0]
         long = result.first.coordinates[1]
-        get_sports_list(lat, long)
+        get_sport_data(lat, long)
     end
         #get_sports_list(lat, long)
         
