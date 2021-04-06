@@ -3,24 +3,25 @@ class CLI
     
     def start
         puts "Welcome! What is your name?"
-        greet(user_input)
+        name = user_input
+        puts "Hey #{name}, let's move your body!"
+        greet
     end
 
     def user_input
         gets.strip
     end
 
-    def greet(name)
-        puts "Hey #{name}, let's start your adventure!"
-        puts "Enter the name of the 'city' you are at or 'stop' to finish your adventure."
+    def greet
+        puts "Which 'city' do you want to check the sports availability?"
         input = user_input
         API.get_data(input)
         city(input)
     end
 
     def city(city_name)
-        puts "Wow #{city_name} is a beautiful city!"
-        puts "Enter 'start' to see the activities options available in #{city_name} or 'stop' to finish your adventure."
+        puts "Wow! #{city_name} is an interesting place!"
+        puts "Enter 'start' to see the activities options available in #{city_name}, 'stop' to finish your adventure, or 'location' to check other city's activities.."
         menu
     end
 
@@ -31,6 +32,8 @@ class CLI
         if selection == "start"
             print_sports
             menu
+        elsif selection == "change city"
+            greet
         elsif selection == "stop"
             goodbye
         else
@@ -56,7 +59,7 @@ class CLI
 
     def invalid 
         puts "Sorry, I couldn't understand that."
-        puts "Please enter 'start' to see your sports list or 'stop' to finish your adventure."
+        puts "Please enter 'start' to see your sports list, 'stop' to finish your adventure, or 'location' to check other city's activities."
         menu
     end
 
@@ -66,7 +69,10 @@ class CLI
         puts info.description
 
         puts ""
-        puts "#{info.name} looks pretty fun! Enter 'start' to see your the sports lists again or 'exit' to stop your adventure."
+        puts "#{info.name} looks pretty fun!"
+        puts "Enter 'start' to see the sports list again, 'exit' to finish your adventure, or 'location' to check other city's activities."
+        menu
+        
         # binding.pry
         # selection = user_input
         
