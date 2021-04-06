@@ -5,25 +5,21 @@ class API
 
     # geocolder = OpenCage::Geocoder.new(api_key: 'ff81c5511add42cf99eaf5134b0f706f') #ENV["GEO_KEY"]
     # geocolder = OpenCage::Geocoder.new(api_key: @@key)
-    # esult = geocolder.geocode('Toronto, Canada')
+    # result = geocolder.geocode('Toronto, Canada')
     # puts result.first.coordinates
 
     @@key = ENV["GEO_KEY"]
 
     def self.get_data(city)
         geocolder = OpenCage::Geocoder.new(api_key: @@key)
-        result = geocolder.geocode("city")
+        result = geocolder.geocode(city)
         lat = result.first.coordinates[0]
         long = result.first.coordinates[1]
         get_sport_data(lat, long)
     end
-        #get_sports_list(lat, long)
-        
         # response = RestClient.get("https://api.opencagedata.com/geocode/v1/json?q=#{city}%20IL&key=#{@@key}")
         # lat = JSON.parse(response)["results"].first["annotations"]["DMS"]["lat"].split(" ")[2].gsub("''", "")
         # long = JSON.parse(response)["results"].first["annotations"]["DMS"]["lng"].split(" ")[2].gsub("''", "")
-        # binding.pry
-        # get_sports_list(lat, long)
      
 
     def self.get_sport_data(lat, long)
@@ -33,9 +29,5 @@ class API
             Sport.new(sport["attributes"]["name"], sport["attributes"]["description"])
         end
     end
-        # response = RestClient.get("https://sports.api.decathlon.com/sports/recommendations/geolocation?coordinates=#{long},#{lat}")
-        # sport_list = JSON.parse(response)
-        # sport_list.each do |sport|
-        # end
     
 end

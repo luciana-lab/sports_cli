@@ -1,6 +1,6 @@
 # what do I want my object model to look like
-
 class Sport
+    
     attr_accessor :name, :description
     @@all = []
 
@@ -22,7 +22,6 @@ class Sport
         self.all.find do |sport|
             sport.name == sport_name
         end
-
     end
 
 end

@@ -21,18 +21,18 @@ class CLI
 
     def city(city_name)
         puts "Wow! #{city_name} is an interesting place!"
-        puts "Enter 'start' to see the activities options available in #{city_name}, 'stop' to finish your adventure, or 'location' to check other city's activities.."
+        puts "Enter 'start' to see the physical activities options available in #{city_name}, 'stop' to finish your journey, or 'location' to change the city."
         menu
     end
 
-    # 3 options: print the list of sports in their city, exit, invalid message
+    # 4 options: print the list of sports in their city, back to location, exit, invalid message
     def menu
         selection = user_input
 
         if selection == "start"
             print_sports
-            menu
-        elsif selection == "change city"
+            # menu
+        elsif selection == "location"
             greet
         elsif selection == "stop"
             goodbye
@@ -47,10 +47,8 @@ class CLI
             puts "#{index}. #{sport.name}"
         end
         puts ""
-        puts ""
-        puts "Select an activity name to see more information about this sport."
-        sports_selection(user_input)
-        
+        puts "Which sport activity do you want to know more about it?"
+        sports_selection(user_input)    
     end
 
     def goodbye
@@ -59,24 +57,26 @@ class CLI
 
     def invalid 
         puts "Sorry, I couldn't understand that."
-        puts "Please enter 'start' to see your sports list, 'stop' to finish your adventure, or 'location' to check other city's activities."
+        puts "Please enter 'start' to see the sports list, 'stop' to finish your journey, or 'location' to change the city."
         menu
     end
 
     def sports_selection(sport)
-        info = Sport.find_sport(sport)
+        if Sport.find_sport(sport)
+           info = Sport.find_sport(sport)
         puts info.name
         puts info.description
-
         puts ""
         puts "#{info.name} looks pretty fun!"
-        puts "Enter 'start' to see the sports list again, 'exit' to finish your adventure, or 'location' to check other city's activities."
+        puts "Enter 'start' to see the sports list again, 'stop' to finish your journey, or 'location' to check other city's activities."
         menu
-        
-        # binding.pry
-        # selection = user_input
-        
-        
+        elsif sport == "stop"
+            goodbye
+        elsif sport == "location"
+            greet
+        else
+            invalid
+        end
     end
 
 end
