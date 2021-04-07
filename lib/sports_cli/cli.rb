@@ -17,7 +17,19 @@ class CLI
         puts "Which 'city' are you looking for a sport's activity?"
         city_name = user_input
         API.get_geo_data(city_name)
-        city(city_name)
+
+        if city_name == "stop"
+            goodbye
+        
+        # binding.pry
+        elsif Sport.all.length != 0
+                
+            
+
+             city(city_name)
+        else
+            invalid
+        end
     end
 
     def city(city_name)
