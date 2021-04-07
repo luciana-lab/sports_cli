@@ -3,7 +3,7 @@
 In this application, the user can interact by choosing the location to see the sports list available in the city selected. The user can also choose
 a sport in the list to see more information.
 
-**About The User**\
+**About The User**
 
 *Who is the User?*\
 Anyone who is looking for a physical activity available in a certain area.
@@ -14,7 +14,7 @@ The user wants to practice an activity but doesn’t know all options available 
 *How do they use our solution to overcome this problem?*\
 This CLI app shows all the options available and its description in just one tool. Making it easier for the user to choose which one better fits what he/she is looking for.
 
-**About The APP**\
+**About The APP**
 
 *What this app do? What is the user experience?*\
 Based on the location that the user chooses, it shows the sports available in this city selected. The user can select an activity to see more information about it.
@@ -22,7 +22,7 @@ Based on the location that the user chooses, it shows the sports available in th
 *Where is the data from?*\
 This app used two APIs.
 * [OpenCage](https://opencagedata.com)* transforms the city name input by the user into a longitude and latitude (required by Decathlon Developers API) and passes the coordinates to the Decathlon Developers.
-* [DecathlonDevelopers](https://developers.decathlon.com/products/sports/docs) shows the sports activities available
+* [Decathlon Developers](https://developers.decathlon.com/products/sports/docs) shows the sports activities available
 in the coordinate selected. In this app, the API Reference used was 'Location based reccommendations'.
 
 \* This API requires a key.
@@ -74,7 +74,7 @@ To run the application use `ruby bin/run`
 ## Contributing
 
 This project is intended to be a safe and welcoming space for collaboration.
-Bug reports and pull requests are welcome on GitHub at https://github.com/luciana-lab/sports_cli.
+Bug reports and pull requests are welcome on GitHub at [Luciana GitHub Profile](https://github.com/luciana-lab).
 
 ## License
 
