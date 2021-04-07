@@ -28,6 +28,7 @@ class CLI
     end
 
     def city(city_name)
+        
         puts "Wow! #{city_name} is an interesting place! :)"
         puts "Enter 'start' to see a list of actitivities available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
         menu
@@ -38,20 +39,19 @@ class CLI
         greet
     end
 
-    #4 options: 1. see the list of activities, 2. chance location, 3. exit, 4. invalid message
     def menu
         selection = user_input
 
         if selection == "start"
             print_sports_list
         elsif selection == "location"
+            Sport.all.clear
             greet
         elsif selection == "stop"
             goodbye
         else
             invalid
         end
-
     end
 
     def goodbye
@@ -93,7 +93,6 @@ class CLI
         else
             invalid
         end
-
     end
 
 end
