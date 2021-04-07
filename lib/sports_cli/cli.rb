@@ -1,4 +1,4 @@
-#responsible for communicating between user and data
+
 class CLI
 
     def start

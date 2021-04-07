@@ -1,6 +1,3 @@
-#responsible for making a call to API
-#getting the data necessary
-#creating new Ruby objects with that data => Object Oriented
 class API
 
     @@key = ENV["GEO_KEY"]

@@ -1,4 +1,3 @@
-# what do I want my object model to look like
 class Sport
 
     attr_accessor :name, :description
