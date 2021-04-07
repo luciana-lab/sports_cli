@@ -1,11 +1,12 @@
 #responsible for communicating between user and data
 class CLI
-    
+
     def start
         puts "Welcome! What is your name?"
         name = user_input
         puts "Hey #{name}, let's move your body!"
         greet
+
     end
 
     def user_input
@@ -13,25 +14,24 @@ class CLI
     end
 
     def greet
-        puts "Which 'city' do you want to check the sports availability?"
-        input = user_input
-        API.get_data(input)
-        city(input)
+        puts "Which 'city' are you looking for a sport's activity?"
+        city_name = user_input
+        API.get_geo_data(city_name)
+        city(city_name)
     end
 
     def city(city_name)
-        puts "Wow! #{city_name} is an interesting place!"
-        puts "Enter 'start' to see the physical activities options available in #{city_name}, 'stop' to finish your journey, or 'location' to change the city."
+        puts "Wow! #{city_name} is an interesting place! :)"
+        puts "Enter 'start' to see a list of actitivities available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
         menu
     end
 
-    # 4 options: print the list of sports in their city, back to location, exit, invalid message
+    #4 options: 1. see the list of activities, 2. chance location, 3. exit, 4. invalid message
     def menu
         selection = user_input
 
         if selection == "start"
-            print_sports
-            # menu
+            print_sports_list
         elsif selection == "location"
             greet
         elsif selection == "stop"
@@ -42,41 +42,46 @@ class CLI
 
     end
 
-    def print_sports
+    def goodbye
+        puts "Thank you! I hope to see you soon. ;)"
+    end
+
+    def invalid
+        puts "Sorry, I couldn't understand that. :("
+        puts "Please, enter 'start' to see the list of activities, 'stop' to finish your journey, or 'location' to chance the city."
+        menu
+    end
+
+    def print_sports_list
         Sport.all.each.with_index(1) do |sport, index|
             puts "#{index}. #{sport.name}"
         end
         puts ""
         puts "Which sport activity do you want to know more about it?"
-        sports_selection(user_input)    
+        sports_details(user_input)
     end
 
-    def goodbye
-        puts "Thank you. I hope to see you soon!"
-    end
+    def sports_details(sport)
 
-    def invalid 
-        puts "Sorry, I couldn't understand that."
-        puts "Please enter 'start' to see the sports list, 'stop' to finish your journey, or 'location' to change the city."
-        menu
-    end
-
-    def sports_selection(sport)
-        if Sport.find_sport(sport)
-           info = Sport.find_sport(sport)
-        puts info.name
-        puts info.description
-        puts ""
-        puts "#{info.name} looks pretty fun!"
-        puts "Enter 'start' to see the sports list again, 'stop' to finish your journey, or 'location' to check other city's activities."
-        menu
-        elsif sport == "stop"
-            goodbye
+        if Sport.find_sport_by_name(sport)
+            info = Sport.find_sport_by_name(sport)
+            puts "--------------------------------"
+            puts info.name
+            puts ""
+            puts info.description
+            puts "--------------------------------"
+            puts ""
+            puts "#{info.name} looks pretty fun! :D"
+            puts "Enter 'start' to see the sports list again, 'stop' to finish your journey, or 'location' to check other city's activities."
+            menu
         elsif sport == "location"
             greet
+        elsif sport == "stop"
+            goodbye
         else
             invalid
         end
+
     end
 
 end
