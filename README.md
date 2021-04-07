@@ -4,6 +4,7 @@ In this application, the user can interact by choosing the location to see the s
 a sport in the list to see more information.
 
 **About The User**\
+
 *Who is the User?*\
 Anyone who is looking for a physical activity available in a certain area.
 
@@ -14,6 +15,7 @@ The user wants to practice an activity but doesn’t know all options available 
 This CLI app shows all the options available and its description in just one tool. Making it easier for the user to choose which one better fits what he/she is looking for.
 
 **About The APP**\
+
 *What this app do? What is the user experience?*\
 Based on the location that the user chooses, it shows the sports available in this city selected. The user can select an activity to see more information about it.
 
@@ -54,7 +56,8 @@ Or install it yourself as:
 
     $ gem install sports_cli
 
-Please, get an API Key from https://opencagedata.com/ to transform the user's 'city' into a Longitude and Latitude.
+Please, get an API Key from [OpenCage](https://opencagedata.com/) to transform the user's 'city' into a 'longitude' and 'latitude'.
+
 Create a .env file with the following key:
 ```
 GEO_KEY=[YOUR KEY HERE]
