@@ -35,6 +35,9 @@ The user can also choose to exit, go back to the list to select another sport or
 2. CLI.rb is responsible for communicating between the user and the data.
 3. Sports.rb is responsible for the Objects that will show to the user.
 
+**Flow Diagram**
+For a better understanding, click [here](https://drive.google.com/file/d/1ANF-wdZSBUzcaaAP-_1v8IyzyyTTS5WU/view?usp=sharing) to view the diagram flow of this app.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -51,25 +54,24 @@ Or install it yourself as:
 
     $ gem install sports_cli
 
-## Usage
-
-TODO: Write usage instructions here
-
-Please, get an API Key from https://opencagedata.com/ to transform the user's 'city' into a Longitute and Latitude.
+Please, get an API Key from https://opencagedata.com/ to transform the user's 'city' into a Longitude and Latitude.
 Create a .env file with the following key:
 ```
-Geocolder_key=[YOUR KEY HERE]
+GEO_KEY=[YOUR KEY HERE]
 ```
 
-## Development
+Make sure your Gemfile includes:
+```
+$ gem 'opencage-geocoder'
+```
+## Usage
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To run the application use `ruby bin/run`
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sports_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
+This project is intended to be a safe and welcoming space for collaboration.
+Bug reports and pull requests are welcome on GitHub at https://github.com/luciana-lab/sports_cli.
 
 ## License
 
@@ -77,7 +79,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the SportsCli project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Sports CLI project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
 
 ## Videos
 30 minutes video coding [here] (https://youtu.be/-cDJmhXAYJw)
