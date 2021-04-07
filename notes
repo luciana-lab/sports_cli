@@ -1,0 +1,18 @@
+1. Build a CLI
+    a. Welcome the user and ask for name  (personalize)
+    b. Ask to the user enter a location
+    c. Prompt to user be able to see the list of sports available in that location (display data one level deep to the user)
+    d. User can select a spot to see more details about it (display data two level deep to the user)
+    e. If user select to exit, a goodbye message will appear
+    f. If user enter a invalid message, an error message will appear
+    f. User can also be able to go back to change the location search
+
+2. Build a API
+    a. Grab the location entered by the user and transform it into latitude and longitude
+    b. Grab a data list of the sports names and descriptions of the location selected by the user
+
+3. Build a Sport
+    a. Create sports name and description objects
+    b. Save it all in an array in the moment it is created
+    c. Display all the results of this array
+    d. Be able to find the sports by its name (CLI class can display the description of that sport name)
