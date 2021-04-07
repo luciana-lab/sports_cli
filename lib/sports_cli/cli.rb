@@ -6,7 +6,6 @@ class CLI
         name = user_input
         puts "Hey #{name}, let's move your body!"
         greet
-
     end
 
     def user_input
@@ -15,20 +14,16 @@ class CLI
 
     def greet
         puts "Which 'city' are you looking for a sport's activity?"
+        
         city_name = user_input
         API.get_geo_data(city_name)
 
         if city_name == "stop"
             goodbye
-        
-        # binding.pry
         elsif Sport.all.length != 0
-                
-            
-
              city(city_name)
         else
-            invalid
+            invalid_city
         end
     end
 
@@ -36,6 +31,11 @@ class CLI
         puts "Wow! #{city_name} is an interesting place! :)"
         puts "Enter 'start' to see a list of actitivities available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
         menu
+    end
+
+    def invalid_city
+        puts "Hmmm... I couldn't find this location. Please, enter a valid city name."
+        greet
     end
 
     #4 options: 1. see the list of activities, 2. chance location, 3. exit, 4. invalid message
