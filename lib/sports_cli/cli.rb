@@ -9,33 +9,33 @@ class CLI
     end
 
     def user_input
-        gets.strip
+        user_input = gets.strip
     end
 
     def greet
-        puts "Which 'city' are you looking for a sport's activity?"
-        
+        Sport.all.clear
+        puts "Which 'city' do you want to check the sports availability?"
         city_name = user_input
         API.get_geo_data(city_name)
-
+        
         if city_name == "stop"
             goodbye
         elsif Sport.all.length != 0
-             city(city_name)
+            city(city_name)
         else
             invalid_city
         end
     end
 
     def city(city_name)
-        
         puts "Wow! #{city_name} is an interesting place! :)"
         puts "Enter 'start' to see a list of actitivities available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
         menu
     end
 
     def invalid_city
-        puts "Hmmm... I couldn't find this location. Please, enter a valid city name."
+        puts "Hmmm... I don't have any information about this location. Please, try another 'city'."
+        
         greet
     end
 
@@ -45,7 +45,6 @@ class CLI
         if selection == "start"
             print_sports_list
         elsif selection == "location"
-            Sport.all.clear
             greet
         elsif selection == "stop"
             goodbye
@@ -70,7 +69,8 @@ class CLI
         end
         puts ""
         puts "Which sport activity do you want to know more about it?"
-        sports_details(user_input)
+        sport_name = user_input.capitalize
+        sports_details(sport_name)
     end
 
     def sports_details(sport)
@@ -87,6 +87,7 @@ class CLI
             puts "Enter 'start' to see the sports list again, 'stop' to finish your journey, or 'location' to check other city's activities."
             menu
         elsif sport == "location"
+            
             greet
         elsif sport == "stop"
             goodbye

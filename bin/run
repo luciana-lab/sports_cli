@@ -3,3 +3,6 @@
 require_relative '../lib/environment.rb'
 
 CLI.new.start
+
+# API.get_geo_data("London")
+# API.get_sport_data("58.44780","38.14092")
