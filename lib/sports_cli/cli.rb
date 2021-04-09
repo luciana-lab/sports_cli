@@ -14,7 +14,7 @@ class CLI
 
     def greet
         Sport.all.clear
-        puts "Which 'city' do you want to check the sports availability?"
+        puts "Which 'city' in Canada do you want to check sports' availability?"
         city_name = user_input
         API.get_geo_data(city_name)
         
@@ -29,13 +29,12 @@ class CLI
 
     def city(city_name)
         puts "Wow! #{city_name} is an interesting place! :)"
-        puts "Enter 'start' to see a list of actitivities available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
+        puts "Enter 'start' to see a list of actitivities, sorted by most popular, available in #{city_name}, 'stop' to finish your journey, or 'location' to choose another city."
         menu
     end
 
     def invalid_city
-        puts "Hmmm... I don't have any information about this location. Please, try another 'city'."
-        
+        puts "Hmmm... I couldn't find any information about this location. Please, try again."
         greet
     end
 
@@ -87,7 +86,6 @@ class CLI
             puts "Enter 'start' to see the sports list again, 'stop' to finish your journey, or 'location' to check other city's activities."
             menu
         elsif sport == "location"
-            
             greet
         elsif sport == "stop"
             goodbye

@@ -1,7 +1,6 @@
 # Sports CLI
 
-In this application, the user can interact by choosing the location to see the sports list available in the city selected. The user can also choose
-a sport in the list to see more information.
+In this application, the user can interact with it by choosing a city in Canada to see a list of sports available in that location. After the list shows up, the user can also choose a sport to see its description.
 
 **About The User**
 
@@ -9,7 +8,7 @@ a sport in the list to see more information.
 Anyone who is looking for a physical activity available in a certain area.
 
 *What is their pain point?*\
-The user wants to practice an activity but doesn’t know all options available in the area.
+The user wants to practice an activity but doesn’t know all the options available in the area.
 
 *How do they use our solution to overcome this problem?*\
 This CLI app shows all the options available and its description in just one tool. Making it easier for the user to choose which one better fits what he/she is looking for.
@@ -17,7 +16,7 @@ This CLI app shows all the options available and its description in just one too
 **About The APP**
 
 *What this app do? What is the user experience?*\
-Based on the location that the user chooses, it shows the sports available in this city selected. The user can select an activity to see more information about it.
+Based on the location that the user chooses, it shows all the sports available in the selected city. The user can select an activity to see more information about it.
 
 *Where is the data from?*\
 This app used two APIs.
@@ -84,5 +83,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the Sports CLI project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
 
-## Videos
+## Extras
 30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)
+Blog post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)
