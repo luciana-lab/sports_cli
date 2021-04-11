@@ -5,7 +5,7 @@ In this application, the user can interact with it by choosing a city in Canada 
 **About The User**
 
 *Who is the User?*\
-Anyone who is looking for a physical activity available in a certain area.
+Anyone who is looking for a physical activity available in a Canada location.
 
 *What is their pain point?*\
 The user wants to practice an activity but doesn’t know all the options available in the area.
@@ -84,5 +84,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Everyone interacting in the Sports CLI project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
 
 ## Extras
+Project Walkthrough Vide [here](https://youtu.be/0im_sS06Exk)
 30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)
 Blog post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)

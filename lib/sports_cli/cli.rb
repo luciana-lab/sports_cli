@@ -13,7 +13,7 @@ class CLI
     end
 
     def greet
-        Sport.all.clear
+        Sport.reset_all
         puts "Which 'city' in Canada do you want to check sports' availability?"
         city_name = user_input
         API.get_geo_data(city_name)
