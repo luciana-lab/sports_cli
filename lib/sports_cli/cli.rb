@@ -73,7 +73,6 @@ class CLI
     end
 
     def sports_details(sport)
-
         if Sport.find_sport_by_name(sport)
             info = Sport.find_sport_by_name(sport)
             puts "--------------------------------"
@@ -93,5 +92,4 @@ class CLI
             invalid
         end
     end
-
 end

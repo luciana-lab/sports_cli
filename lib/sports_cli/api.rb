@@ -2,14 +2,14 @@ class API
 
     @@key = ENV["GEO_KEY"]
 
-    def self.get_geo_data(city_name) 
+    def self.get_geo_data(city_name)
         geocolder = OpenCage::Geocoder.new(api_key: @@key)
         result = geocolder.geocode(city_name)
         if result.length != 0   
             lat = result.first.coordinates[0]
             long = result.first.coordinates[1]
             get_sport_data(long, lat)
-            end 
+        end 
     end
 
     def self.get_sport_data(long, lat)

@@ -26,5 +26,4 @@ class Sport
         sport.name == sport_name
         end
     end
-
 end
