@@ -84,6 +84,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Everyone interacting in the Sports CLI project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sports_cli/blob/master/CODE_OF_CONDUCT.md).
 
 ## Extras
-Project Walkthrough Vide [here](https://youtu.be/0im_sS06Exk)*\
-30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)*\
-Blog post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)
+Project Walkthrough Video [here](https://youtu.be/0im_sS06Exk)\
+Blog Post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)
+30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)\
