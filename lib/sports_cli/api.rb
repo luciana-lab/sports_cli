@@ -1,9 +1,7 @@
 class API
 
-    @@key = ENV["GEO_KEY"]
-
     def self.get_geo_data(city_name)
-        geocolder = OpenCage::Geocoder.new(api_key: @@key)
+        geocolder = OpenCage::Geocoder.new(api_key: ENV["GEO_KEY"])
         result = geocolder.geocode(city_name)
         if result.length != 0   
             lat = result.first.coordinates[0]

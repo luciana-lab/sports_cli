@@ -1,6 +1,6 @@
 class Sport
 
-    attr_accessor :name, :description
+    attr_reader :name, :description
     @@all = []
 
     def initialize(name, description)

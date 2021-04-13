@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# require_relative "./sports_cli/version"
+
 require 'dotenv/load'
 require 'opencage/geocoder'
 require "bundler"
