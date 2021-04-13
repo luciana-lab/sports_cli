@@ -85,5 +85,5 @@ Everyone interacting in the Sports CLI project's codebases, issue trackers, chat
 
 ## Extras
 Project Walkthrough Video [here](https://youtu.be/0im_sS06Exk)\
-Blog Post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)
-30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)\
+Blog Post [here](https://luciana-lab.medium.com/what-ive-learned-in-my-first-coding-project-6e90e4b8f5c9)\
+30 minutes video coding [here](https://youtu.be/-cDJmhXAYJw)
